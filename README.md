@@ -5,7 +5,7 @@ This Git provides configs and plugins that are missing from the standard CSGO se
 1. Install [Metamod](https://www.sourcemm.net/) and [Sourcemod](https://www.sourcemod.net/) on your CSGO server.
 2. Download this repository.
 3. Copy `addons`, `cfg`, `match`, `mapcycle.txt` and `maplist.txt` into the `csgo` folder of your server and overwrite existing files.
-4. Add your admins to `addons/sourcemod/configs/admins_simple.ini`.
+4. Add your admins to `addons/sourcemod/configs/admins_simple.ini` and set your own `rcon_password` in `cfg/server.cfg` (empty by default, which disables RCON).
 5. Restart the server.
 
 ## Overview
@@ -26,7 +26,7 @@ Additionally, the package contains some useful plugins and configurations.
 | [Multi 1v1](https://github.com/splewis/csgo-multi-1v1) | The multi1v1 plugin sets up any number of players in 1v1-situations on specially made maps and they fight in a ladder-type system each round. The winners move up an arena, and the losers go down an arena. Players choose between specific round types (for example: "rifle", "pistol", "awp"), and the plugin automatically spawns and gives players the appropriate weapons each round start. | 1.1.10 |
 | [Practice Mode](https://github.com/splewis/csgo-practice-mode) | Practice Mode is a sourcemod plugin for helping players/teams run practices. Check out the features and command list below for a better understanding of all the tools practicemode provides. | 1.3.4 |
 
-These plugins improve or enable different game modes. If you need help using them, you can refer to the plugin's website for more information or visit the [Wiki](https://github.com/Marschux/ServerKit-CSGO/wiki), where all important information is compiled quickly.
+These plugins improve or enable different game modes. If you need help using them, you can refer to the plugin's website for more information.
 
 ## Included Modes
 | **Fun Mode** | **Based On** | **Description** |
