@@ -1,0 +1,54 @@
+{
+  "Duty": [
+    "de_ancient",
+    "de_anubis",
+    "de_inferno",
+    "de_mirage",
+    "de_nuke",
+    "de_overpass",
+    "de_vertigo"
+  ],
+  "Additional": [
+    "de_ancient",
+    "de_anubis",
+    "de_cache",
+    "de_dust2",
+    "de_inferno",
+    "de_mirage",
+    "de_nuke",
+    "de_overpass",
+    "de_train",
+    "de_vertigo",
+    "de_tuscan",
+    "de_cbble",
+    "de_aztec",
+    "de_abbey",
+    "de_canals",
+    "de_zoo",
+    "de_basalt",
+    "de_season",
+    "de_overgrown"
+  ],
+  "Hostage": [
+    "cs_agency",
+    "cs_assault",
+    "cs_italy",
+    "cs_militia",
+    "cs_office"
+  ],
+  "Wingman": [
+    "de_shortdust",
+    "de_boyard",
+    "de_chalice",
+    "de_cbble",
+    "de_inferno",
+    "de_lake",
+    "de_overpass",
+    "de_shortnuke",
+    "de_train",
+    "de_vertigo",
+    "de_bank",
+    "de_safehouse",
+    "de_stmarc"
+  ]
+}

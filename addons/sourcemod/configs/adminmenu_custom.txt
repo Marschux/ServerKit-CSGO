@@ -1,0 +1,622 @@
+// Custom admin menu commands.
+// For more information:
+//
+// http://wiki.alliedmods.net/Custom_Admin_Menu_%28SourceMod%29
+//
+// Note: This file must be in Valve KeyValues format (no multiline comments)
+//
+// Timings
+// --------
+// Mapchange 0.08 = 5s
+// Config Reload 0.33 = 20s
+// Manuel Cvars 0.42 = 25s
+// Says 0.3 = 18s
+
+"Commands"
+{
+	"Fun Modes"
+	{
+			"Casual Match"
+			{
+				"cmd"				"sm_execcfg /gamesettings/funmodes/@1;sm_futex 0.08 \"changelevel @2\";sm_futex 0.42 \"bot_quota @3\";sm_futex 0.33 \"sm_execcfg /gamesettings/funmodes/@1\"" 
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"Which Mode?"
+				"1"					"casual.cfg"
+				"1."				"Normal"
+				"2"					"trigger_discipline.cfg"
+				"2."				"Trigger Discipline"
+				}
+				"2"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/standard_maps.ini"
+				}
+				"3"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Arms Race"
+			{
+				"cmd"				"sm_execcfg /gamesettings/funmodes/arms_race_@1.cfg;sm_futex 0.08 \"changelevel @2\";sm_futex 0.42 \"bot_quota @3\";sm_futex 0.33 \"sm_execcfg /gamesettings/funmodes/arms_race_@1.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"Which typ of Arms Race?"
+				"1"					"normal"
+				"1."				"normal"
+				"2"					"crazy"
+				"2."				"crazy"
+				}
+				"2"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/arms_race_maps.ini"
+				}
+				"3"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Demolition"
+			{
+				"cmd"				"sm_execcfg /gamesettings/funmodes/demolition.cfg;sm_futex 0.08 \"changelevel @1\";sm_futex 0.42 \"bot_quota @2\";sm_futex 0.33 \"sm_execcfg /gamesettings/funmodes/demolition.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/demolition_maps.ini"
+				}
+				"2"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Flying Scoutsman"
+			{
+				"cmd"				"sm_execcfg /gamesettings/funmodes/flying_scoutsman.cfg;sm_futex 0.08 \"changelevel @1\";sm_futex 0.42 \"bot_quota @2\";sm_futex 0.33 \"sm_execcfg /gamesettings/funmodes/flying_scoutsman.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/flying_scoutsman_maps.ini"
+				}
+				"2"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Solo Danger Zone"
+			{
+				"cmd"				"sm_execcfg /gamesettings/funmodes/danger_zone.cfg;sm_futex 0.08 \"changelevel @1\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/danger_zone_maps.ini"
+				}
+			}
+	}
+
+	"Trainings Modes"
+	{
+			"Retake"
+			{
+				"cmd"				"sm_execcfg /gamesettings/training/retake.cfg;sm_futex 0.05 \"changelevel @1\";sm_futex 0.42 \"bot_quota @2\";sm_futex 0.33 \"sm_execcfg /gamesettings/training/retake.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/retake_maps.ini"
+				}
+				"2"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Guardian"
+			{
+				"cmd"				"sm_execcfg /gamesettings/training/guardian.cfg;sm_futex 0.05 \"changelevel @1\";sm_futex 0.42 \"bot_quota @2\";sm_futex 0.33 \"sm_execcfg /gamesettings/training/guardian.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/guardian_maps.ini"
+				}
+				"2"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"10"		
+				"2."				"10"
+				"3"					"9"
+				"3."				"9"
+				"4"					"8"
+				"4."				"8"	
+				"5"					"7"		
+				"5."				"7"
+				"6"					"6"
+				"6."				"6"
+				"7"					"5"
+				"7."				"5"
+				"8"					"4"
+				"8."				"4"
+				"9"					"3"
+				"9."				"3"
+				"10"				"2"
+				"10."				"2"
+				"11"				"1"
+				"11."				"1"
+				}
+			}
+			"Aimmaps"
+			{
+				"cmd"				"sm_execcfg /gamesettings/training/aimmaps_@1.cfg;sm_futex 0.42 \"mp_roundtime @3\";sm_futex 0.42 \"mp_timelimit @3\"; sm_futex 0.29 \"bot_quota @4\";sm_futex 0.33 \"sm_execcfg /gamesettings/training/aimmaps_@1.cfg\";sm_futex 0.05 \"changelevel @2\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"Only Headshot Mode?"
+				"1"					"normal"
+				"1."				"No"
+				"2"					"headshot"
+				"2."				"Yes"
+				}
+				"2"
+				{
+				"title"				"Which Map should be loaded?"
+				"type"				"mapcycle"
+				"path"				"/cfg/mappools/aim_maps.ini"
+				}
+				"3"
+				{
+				"type" 				"list"
+				"title"				"How long is the Roundtime?"
+				"1"					"5"
+				"1."				"5"
+				"2"					"10"
+				"2."				"10"
+				"3"					"15"		
+				"3."				"15"
+				"4"					"20"
+				"4."				"20"
+				}
+				"4"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Death Match"
+			{
+				"cmd"				"sm_execcfg /gamesettings/training/@1_@2.cfg;sm_futex 0.05 \"changelevel @3\";sm_futex 0.42 \"mp_roundtime @4\";sm_futex 0.42 \"mp_timelimit @4\"; sm_futex 0.42 \"bot_quota @5\";sm_futex 0.33 \"sm_execcfg /gamesettings/training/@1_@2.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"Which Deathmatch Mode?"
+				"1"					"ffa"
+				"1."				"Free for All"
+				"2"					"tm"
+				"2."				"Team Deathmatch"
+				}
+				"2"
+				{
+				"type" 				"Which Damage Mode?"
+				"1"					"normal"
+				"1."				"Full Damage"
+				"2"					"headshot"
+				"2."				"Only Headshot"
+				}
+				"3"
+				{
+				"title"				"Which Map should be loaded?"
+				"type"				"mapcycle"
+				"path"				"/cfg/mappools/standard_maps.ini"
+				}
+				"4"
+				{
+				"type" 				"list"
+				"title"				"How long is the Roundtime?"
+				"1"					"5"
+				"1."				"5"
+				"2"					"10"
+				"2."				"10"
+				"3"					"15"		
+				"3."				"15"
+				"4"					"20"
+				"4."				"20"
+				}
+				"5"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"10"		
+				"3."				"10"
+				"4"					"8"
+				"4."				"8"
+				"5"					"6"
+				"5."				"6"	
+				"6"					"4"		
+				"6."				"4"
+				"7"					"2"
+				"7."				"2"
+				"8"					"1"
+				"8."				"1"
+				}
+			}
+			"Practicemode"
+			{
+				"cmd"				"sm_execcfg /gamesettings/training/practice.cfg;sm_futex 0.05 \"changelevel @1\";sm_futex 0.33 \"sm_execcfg /gamesettings/training/practice.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"				"Which Map should be loaded?"
+				"type"				"mapcycle"
+				"path"				"/cfg/mappools/standard_maps.ini"
+				}
+			}
+	}
+
+	"Competitive Modes"
+	{
+			"Arena 1on1"
+			{
+				"cmd"				"sm_execcfg /gamesettings/competitive/arena_1on1.cfg; sm_futex 0.05 \"changelevel @1\";sm_futex 0.33 \"sm_execcfg /gamesettings/competitive/arena_1on1.cfg\""
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"title"		"Which Map should be loaded?"
+				"type"		"mapcycle"
+				"path"		"/cfg/mappools/arena_maps.ini"
+				}
+			}
+			"Aim 1on1"
+			{
+				"cmd"				"sm_execcfg /gamesettings/competitive/aim_1on1.cfg"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+			"Match XonX"
+			{
+				"cmd"				"sm_execcfg /gamesettings/competitive/match_xonx_standard.cfg"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+	}
+
+	"Server Reset"
+	{
+			"Server Soft Reset"
+			{
+				"cmd"				"sm_execcfg /gamesettings/default/server_reset_soft.cfg"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+			"Server Hard Reset"
+			{
+				"cmd"				"sm_execcfg /gamesettings/default/server_reset_hard.cfg"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+			"Server Full Reset"
+			{
+				"cmd"				"sm_execcfg /gamesettings/default/server_reset_full.cfg"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+	}
+
+	"Server Commands"
+	{
+			"Server Password"
+			{
+				"cmd"				"@1"
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"Set a Password for the Server"
+				"1"					"sv_password "none"; say the password has been reset"
+				"1."				"Reset Password"
+				"2"					"sm_newpassword; say This Password will be removed, when the server is empty!"
+				"2."				"Generate Random Password"
+				}
+			}
+			"Changelevel"
+			{
+				"cmd"		"changelevel @1"
+				"admin"		"sm_ban"
+				"execute"	"server"
+				"1"
+				{
+				"title"		"Which Map?"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}
+			}
+			"Mapvote"
+			{
+				"cmd"		"sm_votemap #1 #2 #3 #4 #5 #6 #7"
+				"admin"		"sm_votemap"
+				"execute"	"server"
+				"1"
+				{
+				"title"		"1/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}
+				"2"
+				{
+				"title"		"2/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}
+				"3"
+				{
+				"title"		"3/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}				
+				"4"
+				{
+				"title"		"4/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}
+				"5"			
+				{
+				"title"		"5/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}					
+				"6"			
+				{
+				"title"		"6/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}					
+				"7"			
+				{
+				"title"		"7/7 Map:"
+				"type"		"mapcycle"
+				"path"		"maplist.txt"
+				}
+			}
+			"Restartgame"
+			{
+				"cmd"				"mp_restartgame 3"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+			"Bot Quota"
+			{
+				"cmd"				"bot_quota @1"
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"How many Bots and Players?"
+				"1"					"0"
+				"1."				"No Bots"
+				"2"					"12"
+				"2."				"12"
+				"3"					"11"
+				"3."				"11"
+				"4"					"10"		
+				"4."				"10"
+				"5"					"9"
+				"5."				"9"
+				"6"					"8"
+				"6."				"8"	
+				"7"					"7"		
+				"7."				"7"
+				"8"					"6"
+				"8."				"6"
+				"9"					"5"
+				"9."				"5"
+				"10"				"4"
+				"10."				"4"
+				"11"				"3"
+				"11."				"3"
+				"12"				"2"
+				"12."				"2"
+				"13"				"1"
+				"13."				"1"
+				}
+			}
+			"Bot Add"
+			{
+				"cmd"				"mp_autoteambalance 0; mp_limitteams 0; @1"
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 				"list"
+				"title"				"Which team does the BOT join?"
+				"1"					"bot_add"
+				"1."				"Team with less users"
+				"2"					"bot_add_t"
+				"2."				"Terrorist"
+				"3"					"bot_add_ct"
+				"3."				"Counter Terrorist"
+				"4"					"bot_kick"
+				"4."				"Bot Kick"
+				}
+			}
+			"Kick Player"
+			{
+				"cmd"				"kick #1; say @1 Kicked!"
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 		"player"
+				"method"	"name"
+				"title"		"Which player should be kicked?"
+				}
+			}
+			"Ban Player"
+			{
+				"cmd"				"banid @2 @1; sm_futex 0.05 \"kickid @1\"; say BANNED"
+				"admin"				"sm_ban"
+				"execute"			"server"
+				"1"
+				{
+				"type" 		"player"
+				"method"	"steamid"
+				"title"		"Which player should be banned?"
+				}
+				"2"
+				{
+				"type" 				"list"
+				"title"				"How long should the player be banned?"
+				"1"					"0"
+				"1."				"permanent"
+				"2"					"1"
+				"2."				"1 minute"
+				"3"					"10"
+				"3."				"10 minute"
+				"4"					"120"
+				"4."				"120 minute"
+				}
+			}
+			"Reload Admins"
+			{
+				"cmd"				"sm_reloadadmins; say reload Admins!"
+				"admin"				"sm_ban"
+				"execute"			"server"
+			}
+	}
+}

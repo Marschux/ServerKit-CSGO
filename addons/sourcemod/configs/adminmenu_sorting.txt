@@ -1,0 +1,54 @@
+/**
+ * The default sorting is designed to look familiar to Mani's admin menu.
+ * You may re-order items here for your own menu.  Any items not explicitly 
+ * sorted will be sorted by their final translated phrases for each given client.
+ */
+
+"Menu"
+{
+	"Fun Modes"
+	{
+		"item"		"Casual Match"
+		"item"		"Arms Race"
+		"item"		"Demoliltion"
+		"item"		"Flying Scoutsman"
+		"item"		"Danger Zone"
+	}
+	
+	"Trainings Modes"
+	{
+		"item"		"Retake"
+		"item"		"Guardian"
+		"item"		"Aimmaps"
+		"item"		"Death Match"
+		"item"		"Practicemode"
+	}
+
+	"Competitive Modes"
+	{
+		"item"		"Arena 1on1"
+		"item"		"Aim 1on1"
+		"item"		"Match XonX"
+	}
+
+	"Server Reset"
+	{
+		"item"		"Server Soft Reset"
+		"item"		"Server Hard Reset"
+		"item"		"Server Full Reset"
+	}
+
+	"Server Commands"
+	{
+		"item"		"Server Password"
+		"item"		"Changelevel"
+		"item"		"Mapvote"
+		"item"		"Restartgame"
+		"item"		"Bot Quota"
+		"item"		"Bot Add"
+		"item"		"Kick Player"
+		"item"		"Ban Player"
+		"item"		"Reload Admins"
+	}
+}
+

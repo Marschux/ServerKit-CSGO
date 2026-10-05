@@ -1,0 +1,49 @@
+{
+	"matchid": "Privat 5on5 Match",
+	"num_maps": 1,
+	"players_per_team": 5,
+	"min_players_to_ready": 1,
+	"min_spectators_to_ready": 0,
+	"skip_veto": true,
+	"veto_first": "team1",
+	"side_type": "always_knife",
+	"wingman": false,
+
+	"maplist":
+	[
+	],
+
+	
+	"team1": {
+		"name": "One Team",
+		"players":
+		{
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : ""
+		}
+	},
+
+	"team2": {
+		"name": "Other Team",
+		"players":
+		{
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : "",
+			"STEAM_1:1:....." : ""
+		}
+	},
+
+	"cvars": {
+		"hostname": 						"Privat 5on5 Match",
+		"sm_practicemode_can_be_started": 	"0",
+		"mp_maxrounds":						"30",
+		"mp_overtime_enable":				"1",
+		"get5_live_countdown_time":  		"5",
+		"mp_friendly_fire": 				"0"
+	}
+}
