@@ -86,7 +86,7 @@ The bug with the rank not being available bothered me. That's why the console no
 ## License
 The configs and menu files written for this project are licensed under the [GNU General Public License v3.0](LICENSE).
 
-The bundled plugins and extensions (`addons/sourcemod/plugins`, `addons/sourcemod/extensions`) are third-party software under the GPL-3.0, like [SourceMod](https://github.com/alliedmodders/sourcemod) itself. They are redistributed unmodified as compiled binaries; the source code is available at the links in the table above. `botmimic.smx` and `csutils.smx` ship with [Practice Mode](https://github.com/splewis/csgo-practice-mode). `adminmenu.smx` is based on the [SourceMod admin menu](https://github.com/alliedmodders/sourcemod/blob/master/plugins/adminmenu.sp).
+The bundled plugins and extensions (`addons/sourcemod/plugins`, `addons/sourcemod/extensions`) are third-party software under the GPL-3.0, like [SourceMod](https://github.com/alliedmodders/sourcemod) itself. They are redistributed unmodified as compiled binaries; the source code is available at the links in the table above. `botmimic.smx` and `csutils.smx` ship with [Practice Mode](https://github.com/splewis/csgo-practice-mode). `adminmenu.smx` is a modified build of the SourceMod 1.11 admin menu without the three default categories; its source is in `addons/sourcemod/scripting`.
 
 `botprofile.db` is a modified game file by Valve / Turtle Rock Studios and is not covered by the GPL. It remains the property of its owners.
 
