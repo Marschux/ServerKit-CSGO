@@ -14,7 +14,7 @@ The core of this Git is the Admin Menu Custom Config, as well as the gamemode_se
 
 Additionally, the package contains some useful plugins and configurations.
 
-## Included Plugins/Extentions
+## Included Plugins/Extensions
 | Name | Description | Version |
 |----------|----------|----------|
 | [SteamWorks](https://github.com/KyleSanderson/SteamWorks) | Exposing SteamWorks functions to SourcePawn. | 1.2.3c |
@@ -24,7 +24,7 @@ Additionally, the package contains some useful plugins and configurations.
 | [Random Password Generation](https://forums.alliedmods.net/showthread.php?t=139990&page=2) | This is a simple plugin that generates a random password. | 06-15-2015 glub |
 | [Get5](https://github.com/splewis/get5) | Get5 is a standalone SourceMod plugin for CS:GO servers for running matches. | 0.15.0 |
 | [Multi 1v1](https://github.com/splewis/csgo-multi-1v1) | The multi1v1 plugin sets up any number of players in 1v1-situations on specially made maps and they fight in a ladder-type system each round. The winners move up an arena, and the losers go down an arena. Players choose between specific round types (for example: "rifle", "pistol", "awp"), and the plugin automatically spawns and gives players the appropriate weapons each round start. | 1.1.10 |
-| [Practice Mode](https://github.com/splewis/csgo-practice-mode) | Practice Mode is a sourcemod plugin for helping players/teams run practices. Check out the features and command list below for a better understanding of all the tools practicemode provides. | 1.3.4 |
+| [Practice Mode](https://github.com/splewis/csgo-practice-mode) | Practice Mode is a sourcemod plugin for helping players/teams run practices. Check out the features and command list on the plugin's page for a better understanding of all the tools practicemode provides. | 1.3.4 |
 
 These plugins improve or enable different game modes. If you need help using them, you can refer to the plugin's website for more information.
 
@@ -39,10 +39,10 @@ These plugins improve or enable different game modes. If you need help using the
 | Solo Danger Zone | [Valve](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes/Danger_Zone) | A Battle Royale mode for big maps where players win by being the last man (or team) standing. Maps must be designed for this mode to work as intended. |
 | Retake | [Valve](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes#Retakes) | Each round, 3 Terrorists spawn on a bomb site with a bomb being planted and 4 CTs spawn at fixed locations around it or on the other bomb spot. Each player can choose a loadout card at round start. |
 | Guardian | [Valve](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes/Guardian) | Two human players must defend a bombsite as CT or hostages as T against rushing bots. Maps must support this mode to work as intended. |
-| Aimmaps | [Marschux](https://github.com/Marschux) | Aimmaps ist ein modus der auf Teamdeathmatch bassiert mit reinen Aimmaps. Zusätzlich kann dies auch noch als "Only Headshot" gestartet werden. |
+| Aimmaps | [Marschux](https://github.com/Marschux) | A mode based on Team Deathmatch that is played on pure aim maps. It is also available as a headshot only mode. |
 | Team Deathmatch | [Valve](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes/Deathmatch) | Like Armsrace but with free weapon choice and respawns across the map. Kills grant points, depending on the weapon type and if it is currently the bonus weapon. A player wins by scoring the highest after the round's time limit. Only opponents of the other team can be killed. In addition, this mode is also available as a headshot only mode. |
 | Free for All | [Valve](https://developer.valvesoftware.com/wiki/CS:GO_Game_Modes/Deathmatch) | This mode is like the Team Deathmatch mode except that everyone, the opponents as well as your own team, are cleared for shooting. And of course this is also available as a headshot only mode. |
-| Practicemode | [Practice Plugin](https://github.com/splewis/csgo-practice-mode) | Practice Mode is a sourcemod plugin for helping players/teams run practices. Check out the features and Practicemode | [command](https://github.com/splewis/csgo-practice-mode) list for a better understanding of all the tools practicemode provides. |
+| Practicemode | [Practice Plugin](https://github.com/splewis/csgo-practice-mode) | Practice Mode is a sourcemod plugin for helping players/teams run practices. Check out the features and [command list](https://github.com/splewis/csgo-practice-mode) for a better understanding of all the tools practicemode provides. |
 | Arena 1on1 | [Multi 1v1 Plugin](https://github.com/splewis/csgo-multi-1v1) | The multi1v1 plugin sets up any number of players in 1v1-situations on specially made maps and they fight in a ladder-type system each round. The winners move up an arena, and the losers go down an arena. Players choose between specific round types (for example: "rifle", "pistol", "awp"), and the plugin automatically spawns and gives players the appropriate weapons each round start. |
 | Aim 1on1 | [Get5 Plugin](https://github.com/splewis/get5) | For 1 vs 1 duels in matchmaking style over 16 rounds. Exclusively on Aimmaps, which are also included in the Prelive Veto. |
 | Wingman 2on2 | [Get5 Plugin](https://github.com/splewis/get5) | Like Competitive, but adjusted for 2v2 and for a smaller map or a map section. Best of 16 rounds. Also, each round is shorter. |
@@ -53,7 +53,7 @@ These plugins improve or enable different game modes. If you need help using the
 
 Some plug-ins have been omitted, such as Deathmatch or Arms Race, which only ask for a little added value. This means that you are not dependent on other plug-ins.
 
-## Custom Server Coammnds
+## Custom Server Commands
 | Command | Description |
 |----------|----------|
 | Server Password | Generate a random server password and write it in the chat. Or reset the password. When the server is empty, also the server remove the password. | 
@@ -64,7 +64,7 @@ Some plug-ins have been omitted, such as Deathmatch or Arms Race, which only ask
 | Bot Add | If the Bots cant join automaticly, then you can add bots. You also can choose the side or kick the bots. | 
 | Kick Player | The "Kick Player" function in CSGO allows an administrator to remove a player from the current game. |
 | Ban Player | The "Ban Player" function in CSGO allows an administrator to prevent a player from joining the server again. It can be used for rule breaking or disruptive behavior. |
-| Reload Admins | When you have added admins via the simple_admin.ini file, you can update the list ingame. |
+| Reload Admins | When you have added admins via the admins_simple.ini file, you can update the list ingame. |
 
 ## Configs 
 ### Server Config
@@ -73,7 +73,7 @@ The server.cfg is the core of the server configs. It contains all the basic sett
 The gamemode configs are only links to the existing files. This makes it easy if these files are updated by Valve. Some configs have additional commands that may fix some errors. These are not affected by the Valve updates.
 ### Gamesettings Configs
 These are the config files which can be loaded via the admin menu and which merge the functions of the plugins with the gamemodes. They are also reset again and again through this.
-### Mappool INC
+### Mappool INI
 These are mappools, very close to the default pools. But they can be easily adapted as desired.
 ### Adminmenu
 The standard "Adminmenu.smx" is edited. The menu items that are normally present have been removed and inserted as required.
