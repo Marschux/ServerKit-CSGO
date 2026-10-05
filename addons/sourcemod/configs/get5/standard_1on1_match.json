@@ -1,5 +1,5 @@
 {
-	"matchid": "Privat 1on1 Match",
+	"matchid": "Private 1on1 Match",
 	"num_maps": 1,
 	"players_per_team": 1,
 	"min_players_to_ready": 1,
@@ -30,7 +30,7 @@
 	},
 
 	"cvars": {
-		"hostname": 						"Privat 1on1 Match",
+		"hostname": 						"Private 1on1 Match",
 		"sm_practicemode_can_be_started": 	"0",
 		"mp_maxrounds":						"16",
 		"mp_overtime_enable":				"1",
