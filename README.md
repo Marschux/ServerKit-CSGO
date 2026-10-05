@@ -4,7 +4,7 @@ This Git provides configs and plugins that are missing from the standard CSGO se
 ## Installation
 1. Install [Metamod](https://www.sourcemm.net/) and [Sourcemod](https://www.sourcemod.net/) on your CSGO server.
 2. Download this repository.
-3. Copy `addons`, `cfg` and `botprofile.db` into the `csgo` folder of your server and overwrite existing files.
+3. Copy `addons`, `cfg`, `match`, `mapcycle.txt` and `maplist.txt` into the `csgo` folder of your server and overwrite existing files.
 4. Add your admins to `addons/sourcemod/configs/admins_simple.ini`.
 5. Restart the server.
 
@@ -81,13 +81,11 @@ The standard "Adminmenu.smx" is edited. The menu items that are normally present
 ### Adminmenu Custom
 This file contains the extra gamesetting configurations with the queries for some individual commands. The game mode can be started via the admin menu and adjusted again and again without having to know anything about the source syntax.
 ### Botprofile
-The bug with the rank not being available bothered me. That's why the console no longer shows it. Maybe Valve will fix it one day or HL3 will be released.
+The stock `botprofile.db` prints an error for every `Rank = ...` line on server start. The file belongs to Valve and is not included here. To silence the errors, open `csgo/botprofile.db` on your server and comment out the 8 `Rank` lines by putting `//` in front of them.
 
 ## License
 The configs and menu files written for this project are licensed under the [GNU General Public License v3.0](LICENSE).
 
 The bundled plugins and extensions (`addons/sourcemod/plugins`, `addons/sourcemod/extensions`) are third-party software under the GPL-3.0, like [SourceMod](https://github.com/alliedmodders/sourcemod) itself. They are redistributed unmodified as compiled binaries; the source code is available at the links in the table above. `botmimic.smx` and `csutils.smx` ship with [Practice Mode](https://github.com/splewis/csgo-practice-mode). `adminmenu.smx` is a modified build of the SourceMod 1.11 admin menu without the three default categories; its source is in `addons/sourcemod/scripting`.
-
-`botprofile.db` is a modified game file by Valve / Turtle Rock Studios and is not covered by the GPL. It remains the property of its owners.
 
 This project is not affiliated with or endorsed by Valve. Counter-Strike is a trademark of Valve Corporation.
