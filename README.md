@@ -17,7 +17,6 @@ Additionally, the package contains some useful plugins and configurations.
 ## Included Plugins/Extentions
 | Name | Description | Version |
 |----------|----------|----------|
-| [Dhooks 2](https://github.com/peace-maker/DHooks2) | A SourceMod extension to hook any game function from within a SourcePawn plugin. This fork adds support to dynamically detour any functions instead of only virtual functions. | 2.2.0 |
 | [SteamWorks](https://github.com/KyleSanderson/SteamWorks) | Exposing SteamWorks functions to SourcePawn. | 1.2.3c |
 | [Plugin Enable/Disable](https://forums.alliedmods.net/showthread.php?p=1682844) | Move plugins to and from the disabled folder by command. | 1.0.1 |
 | [Time Traveler](https://forums.alliedmods.net/showthread.php?t=134288&page=3) | Ever wanted to run a command in the future? In 10 minutes? In a hour? Now you can! Just enter the timer and the command using sm_futex and this plugin will tunnel into the future and execute your command! | 07-28-2016 YoNer |
